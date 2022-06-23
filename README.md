@@ -108,14 +108,15 @@ The third component and the largest one is the `CONFIG_HTML` which is how you ca
 - checkbox (make it possible to select one or more options)
 
 Feel free to configure this however you want or leave it as the default. The system is built up as `json` config file that should be easy to understand and use. Here is a couple of examples
-```json
+```ts
 {
 	label: "The label of the promt",
 	type: "text",
 	key: "unique_key",
 	required: true, 
 }
-
+```
+```ts
 {
 	label: "Select the reason as to why you were banned",
 	type: "select",
