@@ -47,7 +47,7 @@ export async function revokeToken(acessToken: string): Promise<Response> {
 }
 
 export async function getUserInfo(accessToken: string): Promise<User> {
-	const response = await fetch(`https://discord.com/api//users/@me`, {
+	const response = await fetch(`https://discord.com/api/users/@me`, {
 		method: "GET",
 		headers: {
 			authorization: `Bearer ${accessToken}`,
